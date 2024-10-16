@@ -1,0 +1,16 @@
+.carousel {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-image {
+    width: 70%;
+    height: auto;
+    display: none;
+}
+
+.carousel-image.active {
+    display: block;
+}
