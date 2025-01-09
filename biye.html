@@ -6,23 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>已毕业研究生</title>
     <style>
-        .top-image {
-            width: 100%;
-            max-width: 100%;
-            height: auto;
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lato', sans-serif;
+            width: 1800px;
+            /* 固定页面宽度 */
+            margin: 0 auto;
+            /* 页面居中 */
+            background-color: #f5f5f5;
+            /* 可选的背景颜色 */
         }
 
+        /* 顶部导航栏 */
         .top_bar {
-            width: 100%;
+            width: 1800px;
+            /* 固定宽度 */
             background-color: #FFFFFF;
         }
 
+        /* LOGO 区域 */
         .logo {
             width: 100%;
-            max-width: 100%;
+            /* LOGO宽度占据顶部栏的宽度 */
         }
 
-        ul {
+        .top-image {
+            display: block;
+            /* 避免图片默认的 inline 行为 */
+            width: 1800px;
+            /* 固定图片宽度 */
+            height: auto;
+            /* 保持图片比例 */
+            margin: 0 auto;
+            /* 居中显示 */
+        }
+
+        /* 顶部导航菜单 */
+        ul.top {
             list-style-type: none;
             margin: 0;
             padding: 0;
@@ -30,23 +51,10 @@
             width: 100%;
         }
 
-        li {
+        li.top {
             float: left;
             width: 16.66%;
-        }
-
-        ul.pi {
-            list-style-type: none;
-            margin: 0 auto;
-            padding: 0;
-            overflow: hidden;
-            display: flex;
-            justify-content: space-around;
-            width: 85%;
-        }
-
-        li.pi {
-            width: 45%;
+            /* 固定每个导航项宽度 */
         }
 
         a:link,
@@ -59,7 +67,7 @@
             padding: 15px;
             text-decoration: none;
             text-transform: uppercase;
-            width: 100%;
+            font-size: 20px;
         }
 
         a:hover,
@@ -72,6 +80,51 @@
             height: 10px;
             background-color: #FFFFFF;
         }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            /* 自动换行 */
+            justify-content: space-space;
+            /* 子元素之间等距分布 */
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .card {
+            width: 45%;
+            /* 两列布局，每列占宽度的 48% */
+            margin-bottom: 20px;
+            margin-left: 80px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+
+        .card img {
+            width: 225px;
+            height: 300px;
+            border-radius: 5px;
+            margin-right: 30px;
+            /* 图片与文字的间距 */
+        }
+
+        .card-content {
+            flex: 2;
+        }
+
+        .card-content span {
+            font-size: 22px;
+            font-weight: bold;
+            color: #0070c0;
+        }
+
+        .card-content p {
+            margin: 5px 0;
+            font-size: 18px;
+            line-height: 1.5;
+            color: #333333;
+        }
     </style>
 </head>
 
@@ -82,644 +135,145 @@
                 <img src="top picture.png" alt="Top Image" class="top-image">
             </div>
             <div class="spacer"></div>
-            <ul>
-                <li><a href="jianjie.html">简介</a></li>
-                <li><a href="PI.html">PI成员</a></li>
-                <li><a href="zaidu.html">在读研究生</a></li>
-                <li><a href="biye.html">已毕业研究生</a></li>
-                <li><a href="chengguo.html">学术成果</a></li>
-                <li><a href="fengcai.html">团队风采</a></li>
+            <ul class="top">
+                <li class="top"><a href="jianjie.html">简介</a></li>
+                <li class="top"><a href="PI.html">PI成员</a></li>
+                <li class="top"><a href="zaidu.html">在读研究生</a></li>
+                <li class="top"><a href="biye.html">已毕业研究生</a></li>
+                <li class="top"><a href="chengguo.html">学术成果</a></li>
+                <li class="top"><a href="fengcai.html">团队风采</a></li>
             </ul>
-            <div class="wp_single wp_column_article" id="wp_column_article">
-                <div class="wp_entry">
-                    <div class="wp_articlecontent">
 
+            <!-- Spacer -->
+            <div class="spacer"></div>
+
+            <!-- 内容区域 -->
+            <h2 style="font-size: 28px; color: #6e0001; margin-left: 80px;">硕士研究生</h2>
+            <div class="spacer"></div>
+            <div class="content">
+                <!-- 第一位学生 -->
+                <div class="card">
+                    <img src="2020级田佳静.jpg" alt="田佳静">
+
+                    <div class="card-content">
+                        <span>田佳静&nbsp;&nbsp;2020级硕士</span>
                         <div class="spacer"></div>
+                        <p><strong>毕业年份:</strong> 2023年</p>
                         <div class="spacer"></div>
-
-                        <p>
-                            <span
-                                style="background-color:#ffffff;color:#6e0001;font-family:lato, sans-serif;font-size:28px"><strong>&nbsp;
-                                    &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;硕士研究生</strong></span>
-                        </p>
-
-                        <ul class="pi">
-                            <li class="pi">
-                                <p>
-                                    <img data-layer="photo" src="2020级田佳静.jpg"
-                                        style="float:left;width:225px;height:300px;padding-right:10px;"
-                                        sudyfile-attr="{'title':'老师 拷贝.png'}" height="400" border="0" hspace="0"
-                                        vspace="0">
-                                    <span
-                                        style="color:#0064a0;font-family:lato, sans-serif;font-weight:700;text-align:center;font-size:18px;line-height:1.5em;">
-                                        &nbsp; &nbsp; &nbsp;
-                                        <span
-                                            style="font-family:lato, sans-serif;font-weight:700;text-align:center;line-height:1.5em;font-size:20px;color:#0070c0;">田佳静&nbsp;&nbsp;2020级硕士
-                                        </span>
-                                    </span>
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">
-                                        <span
-                                            style="font-family:lato, sans-serif;font-size:17px;line-height:1.5em;color:#0070c0;">&nbsp;</span>
-                                        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                    </span>
-                                </p>
-
-                                <p style="line-height:1.5em;margin-bottom:10px;">
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp; &nbsp;</span>
-                                    <span
-                                        style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">毕业年份:&nbsp;</span>
-
-                                    <span
-                                        style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">2023年</span>
-
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp;</span>
-                                </p>
-
-                                <p style="line-height:1.5em;margin-bottom:10px;">
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp; &nbsp;</span>
-                                    <span
-                                        style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">研究方向:&nbsp;</span>
-
-                                    <span
-                                        style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">生物质能源碳排放和气候变化</span>
-
-
-                                </p>
-
-                                <p style="line-height:1.5em;margin-bottom:10px;">
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp; &nbsp;</span>
-                                    <span
-                                        style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">成果及荣誉:&nbsp;</span>
-                                    在Resources, Conservation and Recycling
-                                    <br>
-                                    &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;（IF="13.2，JCR1区，中科院1区）发表论文一篇
-                                    <br>
-                                    &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 获国家励志奖学金，专业奖学金，院级优秀党员
-                                    <span
-                                        style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">
-                                    </span>
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp;</span>
-                                </p>
-
-                                <p style="line-height:1.5em;margin-bottom:10px;">
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp; &nbsp;</span>
-                                    <span
-                                        style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">兴趣爱好：&nbsp;</span>
-
-                                    <span
-                                        style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">阅读，跑步</span>
-
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp;</span>
-                                </p>
-
-                            <li class="pi">
-                                <p>
-                                    <img data-layer="photo" src="2020级谢缘铭.jpg"
-                                        style="float:left;width:225px;height:300px;padding-right:10px;"
-                                        sudyfile-attr="{'title':'老师 拷贝.png'}" height="400" hspace="0" vspace="0">
-                                    <span
-                                        style="color:#0064a0;font-family:lato, sans-serif;font-weight:700;text-align:center;font-size:18px;line-height:1.5em;">
-                                        &nbsp; &nbsp; &nbsp;
-                                        <span
-                                            style="font-family:lato, sans-serif;font-weight:700;text-align:center;line-height:1.5em;font-size:20px;color:#0070c0;">谢缘铭&nbsp;&nbsp;2020级硕士
-                                        </span>
-                                    </span>
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">
-                                        <span
-                                            style="font-family:lato, sans-serif;font-size:17px;line-height:1.5em;color:#0070c0;">&nbsp;</span>
-                                        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                    </span>
-                                </p>
-
-                                <p style="line-height:1.5em;margin-bottom:10px;">
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp; &nbsp;</span>
-                                    <span
-                                        style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">毕业年份：&nbsp;</span>
-
-                                    <span
-                                        style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">2023年</span>
-
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp;</span>
-                                </p>
-
-                                <p style="line-height:1.5em;margin-bottom:10px;">
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp; &nbsp;</span>
-                                    <span
-                                        style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">研究方向:&nbsp;</span>
-
-                                    <span
-                                        style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">中国退耕区植被净初级生产力格局及驱动力
-                                       <br>
-                                       &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 分析</span>
-
-
-                                </p>
-
-                                <p style="line-height:1.5em;margin-bottom:10px;">
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp; &nbsp;</span>
-                                    <span
-                                        style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">成果及荣誉:&nbsp;</span>
-
-                                    <span
-                                        style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">
-                                        在Land期刊发表论文一篇
-                                        <br>
-                                        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;曾获院优秀研究生等称号
-
-                                    </span>
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp;</span>
-                                </p>
-
-                                <p style="line-height:1.5em;margin-bottom:10px;">
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp; &nbsp;</span>
-                                    <span
-                                        style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">兴趣爱好：&nbsp;</span>
-
-                                    <span
-                                        style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">唱歌，画画，手工</span>
-
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp;</span>
-                                </p>
-
-                            </li>
-                        </ul>
+                        <p><strong>研究方向:</strong> 生物质能源碳排放和气候变化</p>
                         <div class="spacer"></div>
+                        <p><strong>成果及荣誉:</strong> <br>
+                            在Resources, Conservation and Recycling（IF="13.2，中科院1区）发表论文1篇；获国家励志奖学金，专业奖学金；院级优秀党员</p>
                         <div class="spacer"></div>
+                        <p><strong>兴趣爱好:</strong> 阅读，跑步</p>
+                    </div>
+                </div>
 
-                        <ul class="pi">
-                            <li class="pi">
-                                <p>
-                                    <img data-layer="photo" src="2020级余飞燕.jpg"
-                                        style="float:left;width:225px;height:300px;padding-right:10px;"
-                                        sudyfile-attr="{'title':'老师 拷贝.png'}" height="400" border="0" hspace="0"
-                                        vspace="0">
-                                    <span
-                                        style="color:#0064a0;font-family:lato, sans-serif;font-weight:700;text-align:center;font-size:18px;line-height:1.5em;">
-                                        &nbsp; &nbsp; &nbsp;
-                                        <span
-                                            style="font-family:lato, sans-serif;font-weight:700;text-align:center;line-height:1.5em;font-size:20px;color:#0070c0;">余飞燕&nbsp;&nbsp;2020级硕士
-                                        </span>
-                                    </span>
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">
-                                        <span
-                                            style="font-family:lato, sans-serif;font-size:17px;line-height:1.5em;color:#0070c0;">&nbsp;</span>
-                                        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                    </span>
-                                </p>
-
-                                <p style="line-height:1.5em;margin-bottom:10px;">
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp; &nbsp;</span>
-                                    <span
-                                        style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">毕业年份:&nbsp;</span>
-
-                                    <span
-                                        style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">2023年</span>
-
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp;</span>
-                                </p>
-
-                                <p style="line-height:1.5em;margin-bottom:10px;">
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp; &nbsp;</span>
-                                    <span
-                                        style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">研究方向:&nbsp;</span>
-
-                                    <span
-                                        style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">灌木林高分辨率NPP估算方法及分析</span>
-
-
-                                </p>
-
-                                <p style="line-height:1.5em;margin-bottom:10px;">
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp; &nbsp;</span>
-                                    <span
-                                        style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">成果及荣誉:&nbsp;</span>
-                                    <span
-                                        style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">
-                                        获批实用新型专利一项
-                                        <br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 在International
-                                        Journal of Remote
-                                        <br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sensing期刊上发表论文一篇
-                                        <span
-                                            style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">
-                                        </span>
-                                        <span
-                                            style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                            &nbsp;</span>
-                                </p>
-
-                                <p style="line-height:1.5em;margin-bottom:10px;">
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp; &nbsp;</span>
-                                    <span
-                                        style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">兴趣爱好：&nbsp;</span>
-
-                                    <span
-                                        style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">旅游，看番，游戏</span>
-
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp;</span>
-                                </p>
-
-                            <li class="pi">
-                                <p>
-                                    <img data-layer="photo" src="2020级钟昊铭.jpg"
-                                        style="float:left;width:225px;height:300px;padding-right:10px;"
-                                        sudyfile-attr="{'title':'老师 拷贝.png'}" height="400" border="0" hspace="0"
-                                        vspace="0">
-                                    <span
-                                        style="color:#0064a0;font-family:lato, sans-serif;font-weight:700;text-align:center;font-size:18px;line-height:1.5em;">
-                                        &nbsp; &nbsp; &nbsp;
-                                        <span
-                                            style="font-family:lato, sans-serif;font-weight:700;text-align:center;line-height:1.5em;font-size:20px;color:#0070c0;">钟昊明&nbsp;&nbsp;2020级硕士
-                                        </span>
-                                    </span>
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">
-                                        <span
-                                            style="font-family:lato, sans-serif;font-size:17px;line-height:1.5em;color:#0070c0;">&nbsp;</span>
-                                        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                    </span>
-                                </p>
-
-                                <p style="line-height:1.5em;margin-bottom:10px;">
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp; &nbsp;</span>
-                                    <span
-                                        style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">毕业年份:&nbsp;</span>
-
-                                    <span
-                                        style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">2024年</span>
-
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp;</span>
-                                </p>
-
-                                <p style="line-height:1.5em;margin-bottom:10px;">
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp; &nbsp;</span>
-                                    <span
-                                        style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">研究方向:&nbsp;</span>
-
-                                    <span
-                                        style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">中国农田剩余物储量评估和植被碳动态模型</span>
-
-
-                                </p>
-
-                                <p style="line-height:1.5em;margin-bottom:10px;">
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp; &nbsp;</span>
-                                    <span
-                                        style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">成果及荣誉:&nbsp;</span>
-
-
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp;</span>
-                                </p>
-
-                                <p style="line-height:1.5em;margin-bottom:10px;">
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp; &nbsp;</span>
-                                    <span
-                                        style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">兴趣爱好：&nbsp;</span>
-
-                                    <span
-                                        style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">阅读，爬山，尝试新鲜事物</span>
-
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp;</span>
-                                </p>
-
-                            </li>
-                        </ul>
-
+                <!-- 第二位学生 -->
+                <div class="card">
+                    <img src="2020级谢缘铭.jpg" alt="谢缘铭">
+                    <div class="card-content">
+                        <span>谢缘铭&nbsp;&nbsp;2020级硕士</span>
                         <div class="spacer"></div>
+                        <p><strong>毕业年份:</strong> 2023年</p>
                         <div class="spacer"></div>
-
-                        <ul class="pi">
-                            <li class="pi">
-                                <p>
-                                    <img data-layer="photo" src="2021级/方铭杰/2021级方铭杰.jpg"
-                                        style="float:left;width:225px;height:300px;padding-right:10px;"
-                                        sudyfile-attr="{'title':'老师 拷贝.png'}" height="400" border="0" hspace="0"
-                                        vspace="0">
-                                    <span
-                                        style="color:#0064a0;font-family:lato, sans-serif;font-weight:700;text-align:center;font-size:18px;line-height:1.5em;">
-                                        &nbsp; &nbsp; &nbsp;
-                                        <span
-                                            style="font-family:lato, sans-serif;font-weight:700;text-align:center;line-height:1.5em;font-size:20px;color:#0070c0;">方铭杰&nbsp;&nbsp;2021级硕士
-                                        </span>
-                                    </span>
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">
-                                        <span
-                                            style="font-family:lato, sans-serif;font-size:17px;line-height:1.5em;color:#0070c0;">&nbsp;</span>
-                                        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                    </span>
-                                </p>
-
-                                <p style="line-height:1.5em;margin-bottom:10px;">
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp; &nbsp;</span>
-                                    <span
-                                        style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">毕业年份:&nbsp;</span>
-
-                                    <span
-                                        style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">2024年</span>
-
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp;</span>
-                                </p>
-
-                                <p style="line-height:1.5em;margin-bottom:10px;">
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp; &nbsp;</span>
-                                    <span
-                                        style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">研究方向:&nbsp;</span>
-
-                                    <span
-                                        style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">西北地区灌木林的动态监测与功能量化评估</span>
-
-
-                                </p>
-
-                                <p style="line-height:1.5em;margin-bottom:10px;">
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp; &nbsp;</span>
-                                    <span
-                                        style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">成果及荣誉:&nbsp;</span>
-                                    以共同作者身份，在《Atmosphere》、
-                                    <br>
-                                    &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;《Land》和《International Journal of Remote
-                                    <br>
-                                    &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
-                                    Sensing》期刊各发表论文1篇。
-                                    <br>
-                                    &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                                    “硕博杯”篮球比赛优秀裁判
-                                    <span
-                                        style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">
-
-                                        <span
-                                            style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">
-                                        </span>
-                                        <span
-                                            style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                            &nbsp;</span>
-                                </p>
-
-                                <p style="line-height:1.5em;margin-bottom:10px;">
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp; &nbsp;</span>
-                                    <span
-                                        style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">兴趣爱好：</span>
-
-                                    <span
-                                        style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">运动，健身，游泳，读书</span>
-
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp;</span>
-                                </p>
-
-                            <li class="pi">
-                                <p>
-                                    <img data-layer="photo" src="2021级/郭冰倩/2021级郭冰倩.jpg"
-                                        style="float:left;width:225px;height:300px;padding-right:10px;"
-                                        sudyfile-attr="{'title':'老师 拷贝.png'}" height="400" border="0" hspace="0"
-                                        vspace="0">
-                                    <span
-                                        style="color:#0064a0;font-family:lato, sans-serif;font-weight:700;text-align:center;font-size:18px;line-height:1.5em;">
-                                        &nbsp; &nbsp; &nbsp;
-                                        <span
-                                            style="font-family:lato, sans-serif;font-weight:700;text-align:center;line-height:1.5em;font-size:20px;color:#0070c0;">郭冰倩&nbsp;&nbsp;2021级硕士
-                                        </span>
-                                    </span>
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">
-                                        <span
-                                            style="font-family:lato, sans-serif;font-size:17px;line-height:1.5em;color:#0070c0;">&nbsp;</span>
-                                        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                    </span>
-                                </p>
-
-                                <p style="line-height:1.5em;margin-bottom:10px;">
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp; &nbsp;</span>
-                                    <span
-                                        style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">毕业年份:&nbsp;</span>
-
-                                    <span
-                                        style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">2024年</span>
-
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp;</span>
-                                </p>
-
-                                <p style="line-height:1.5em;margin-bottom:10px;">
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp; &nbsp;</span>
-                                    <span
-                                        style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">研究方向:&nbsp;</span>
-
-                                    <span
-                                        style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">黄土高原退耕土壤固碳收益模拟与评估</span>
-
-
-                                </p>
-
-                                <p style="line-height:1.5em;margin-bottom:10px;">
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp; &nbsp;</span>
-                                    <span
-                                        style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">成果及荣誉:&nbsp;</span>
-
-                                    <span
-                                        style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:17px;line-height:1.5em;">
-                                        在《西安理工大学学报》以第一作者发表文章
-                                        <br>
-                                        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;1篇，在《Atmosphere》以第二作者发表文章
-                                        <br> 
-                                        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;1篇，获批专利“一种灌木平茬方法”
-                                    
-                                        <br> 
-                                        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
-                                    院级“优秀大学生”
-
-                                    </span>
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp;</span>
-                                </p>
-
-                                <p style="line-height:1.5em;margin-bottom:10px;">
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp; &nbsp;</span>
-                                    <span
-                                        style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">兴趣爱好：&nbsp;</span>
-
-                                    <span
-                                        style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">观看纪录片和电影、制作手工艺品、羽毛球</span>
-
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp;</span>
-                                </p>
-
-                            </li>
-                        </ul>
+                        <p><strong>研究方向:</strong> 植被净初级生产力格局及驱动力</p>
                         <div class="spacer"></div>
+                        <p><strong>成果及荣誉:</strong> <br>
+                            在Land期刊发表论文一篇，曾获院优秀研究生等称号</p>
+                        <div class="spacer"></div>
+                        <p><strong>兴趣爱好:</strong> 唱歌，画画，手工</p>
+                    </div>
+                </div>
 
-                        <ul class="pi">
-                            <li class="pi">
-                                <p>
-                                    <img data-layer="photo" src="2021级/甘小凡/2021级甘小凡.jpg"
-                                        style="float:left;width:225px;height:300px;padding-right:10px;"
-                                        sudyfile-attr="{'title':'老师 拷贝.png'}" height="400" border="0" hspace="0"
-                                        vspace="0">
-                                    <span
-                                        style="color:#0064a0;font-family:lato, sans-serif;font-weight:700;text-align:center;font-size:18px;line-height:1.5em;">
-                                        &nbsp; &nbsp; &nbsp;
-                                        <span
-                                            style="font-family:lato, sans-serif;font-weight:700;text-align:center;line-height:1.5em;font-size:20px;color:#0070c0;">甘小凡&nbsp;&nbsp;2021级硕士
-                                        </span>
-                                    </span>
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">
-                                        <span
-                                            style="font-family:lato, sans-serif;font-size:17px;line-height:1.5em;color:#0070c0;">&nbsp;</span>
-                                        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                    </span>
-                                </p>
+                <!-- 第三位学生 -->
+                <div class="spacer"></div>
+                <div class="card">
+                    <img src="2020级余飞燕.jpg" alt="余飞燕">
+                    <div class="card-content">
+                        <span>余飞燕&nbsp;&nbsp;2020级硕士</span>
+                        <div class="spacer"></div>
+                        <p><strong>毕业年份:</strong> 2023年</p>
+                        <div class="spacer"></div>
+                        <p><strong>研究方向:</strong> 灌木林高分辨率NPP估算方法及分析</p>
+                        <div class="spacer"></div>
+                        <p><strong>成果及荣誉:</strong> <br>
+                            在International Journal of Remote Sensing期刊上发表论文1篇，获批实用新型专利一项</p>
+                        <div class="spacer"></div>
+                        <p><strong>兴趣爱好:</strong> 旅游，看番，游戏</p>
+                    </div>
+                </div>
 
-                                <p style="line-height:1.5em;margin-bottom:10px;">
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp; &nbsp;</span>
-                                    <span
-                                        style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">毕业年份:&nbsp;</span>
+                <!-- 第四位学生 -->
+                <div class="spacer"></div>
+                <div class="card">
+                    <img src="2020级钟昊铭.jpg" alt="钟昊铭">
+                    <div class="card-content">
+                        <span>钟昊铭&nbsp;&nbsp;2020级硕士</span>
+                        <div class="spacer"></div>
+                        <p><strong>毕业年份:</strong> 2024年</p>
+                        <div class="spacer"></div>
+                        <p><strong>研究方向:</strong> 中国农田剩余物储量评估和植被碳动态模型</p>
+                        <div class="spacer"></div>
+                        <p><strong>成果及荣誉:</strong></p>
+                        <div class="spacer"></div>
+                        <p><strong>兴趣爱好:</strong> 阅读，爬山，尝试新鲜事物</p>
+                    </div>
+                </div>
 
-                                    <span
-                                        style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">2024年</span>
+                <!-- 第五位学生 -->
+                <div class="card">
+                    <img src="2021级方铭杰.jpg" alt="方铭杰">
+                    <div class="card-content">
+                        <span>方铭杰&nbsp;&nbsp;2021级硕士</span>
+                        <div class="spacer"></div>
+                        <p><strong>毕业年份:</strong> 2024年</p>
+                        <div class="spacer"></div>
+                        <p><strong>研究方向:</strong> 西北地区灌木林的动态监测与功能量化评估</p>
+                        <div class="spacer"></div>
+                        <p><strong>成果及荣誉:</strong><br>
+                            以共同作者身份在Atmosphere, Land, International Journal of Remote Sensing期刊各发表论文1篇；“硕博杯”篮球比赛优秀裁判</p>
+                        <div class="spacer"></div>
+                        <p><strong>兴趣爱好:</strong> 运动，健身，游泳，读书</p>
+                    </div>
+                </div>
 
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp;</span>
-                                </p>
+                <!-- 第六位学生 -->
+                <div class="card">
+                    <img src="2021级郭冰倩.jpg" alt="郭冰倩">
+                    <div class="card-content">
+                        <span>郭冰倩&nbsp;&nbsp;2021级硕士</span>
+                        <div class="spacer"></div>
+                        <p><strong>毕业年份:</strong> 2024年</p>
+                        <div class="spacer"></div>
+                        <p><strong>研究方向:</strong> 黄土高原退耕土壤固碳收益模拟与评估</p>
+                        <div class="spacer"></div>
+                        <p><strong>成果及荣誉:</strong><br>
+                            在西安理工大学学报以第一作者发表文章1篇，在Atmosphere以第二作者发表文章1篇，获批专利“一种灌木平茬方法”，院级优秀大学生</p>
+                        <div class="spacer"></div>
+                        <p><strong>兴趣爱好:</strong> 观看纪录片和电影、制作手工艺品、羽毛球</p>
+                    </div>
+                </div>
 
-                                <p style="line-height:1.5em;margin-bottom:10px;">
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp; &nbsp;</span>
-                                    <span
-                                        style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">研究方向:&nbsp;</span>
+                <!-- 第七位学生 -->
+                <div class="card">
+                    <img src="2021级甘小凡.jpg" alt="甘小凡">
+                    <div class="card-content">
+                        <span>甘小凡&nbsp;&nbsp;2021级硕士</span>
+                        <div class="spacer"></div>
+                        <p><strong>毕业年份:</strong> 2024年</p>
+                        <div class="spacer"></div>
+                        <p><strong>研究方向:</strong> 采伐剩余物能源化利用的温室效应评估</p>
+                        <div class="spacer"></div>
+                        <p><strong>成果及荣誉:</strong><br>
+                            在Atmosphere期刊发表论文1篇，授权软著一项，院级优秀大学生，“三分钟”演讲第一名</p>
+                        <div class="spacer"></div>
+                        <p><strong>兴趣爱好:</strong> 舞蹈</p>
+                    </div>
+                </div>
 
-                                    <span
-                                        style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">采伐剩余物能源化利用的温室效应评估</span>
+            </div>
+        </div>
+</body>
 
-
-                                </p>
-
-                                <p style="line-height:1.5em;margin-bottom:10px;">
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp; &nbsp;</span>
-                                    <span
-                                        style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">成果及荣誉:&nbsp;</span>
-                                    <span
-                                        style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">
-                                        在《Atmosphere》期刊发表论文一篇
-                                        <br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 授权软著一项
-                                        <br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 院级优秀大学生、“三分钟”演讲第一名
-                                        <span
-                                            style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">
-                                        </span>
-                                        <span
-                                            style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                            &nbsp;</span>
-                                </p>
-
-                                <p style="line-height:1.5em;margin-bottom:10px;">
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp; &nbsp;</span>
-                                    <span
-                                        style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">兴趣爱好：&nbsp;</span>
-
-                                    <span
-                                        style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">舞蹈</span>
-
-                                    <span
-                                        style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                        &nbsp;</span>
-                                </p>
-                            <li class="pi">
-
-                                <img data-layer="photo" src="bai.jpg"
-                                    style="float:left;width:225px;height:300px;padding-right:10px;"
-                                    sudyfile-attr="{'title':'老师 拷贝.png'}" height="400" border="0" hspace="0" vspace="0">
-
-                                </p>
-                            </li>
+</html>
