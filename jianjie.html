@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PI</title>
+    <title>简介</title>
     <style>
         body {
             margin: 0;
@@ -81,49 +81,88 @@
             background-color: #FFFFFF;
         }
 
-        .content {
+        .photo-container {
+            width: 1000px;
+            /* 固定宽度 */
+            margin: 0 auto;
+            /* 居中显示 */
+        }
+
+        .photo {
+            list-style-type: none;
+            margin: 0 auto;
+            /* 水平居中 */
+            padding: 0;
+            overflow: hidden;
             display: flex;
+            /* 使用 Flex 布局 */
+            justify-content: space-around;
+            /* 等间距排列 */
             flex-wrap: wrap;
-            /* 自动换行 */
-            justify-content: space-space;
-            /* 子元素之间等距分布 */
-            width: 100%;
-            margin-top: 20px;
+            /* 允许换行 */
         }
 
-        .card {
-            width: 70%;
-            /* 两列布局，每列占宽度的 48% */
+        li.photo {
+            width: 300px;
+            /* 固定每张图片的宽度 */
             margin-bottom: 20px;
-            margin-left: 100px;
             display: flex;
-            align-items: flex-start;
+            flex-direction: column;
+            align-items: center;
         }
 
-
-        .card img {
-            width: 400px;
-            height: 320px;
-            border-radius: 5px;
-            margin-right: 50px;
-            /* 图片与文字的间距 */
+        .photo img {
+            width: 300px;
+            /* 固定宽度 */
+            height: 200px;
+            /* 固定高度 */
+            display: block;
         }
 
-        .card-content {
-            flex: 2;
-        }
-
-        .card-content span {
-            font-size: 22px;
-            font-weight: bold;
-            color: #0070c0;
-        }
-
-        .card-content p {
-            margin: 5px 0;
+        figcaption {
+            text-align: center;
+            color: black;
             font-size: 18px;
-            line-height: 1.5;
-            color: #333333;
+            /* 固定字体大小 */
+            margin-top: 10px;
+        }
+
+        .carousel-image {
+            display: block;
+            /* 避免图片默认的 inline 行为 */
+            width: 1000px;
+            /* 设置宽度与 .top-image 一致 */
+            height: auto;
+            /* 保持图片比例 */
+            margin: 0 auto;
+            /* 居中显示 */
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            /* 水平居中对齐 */
+            margin: 20px 0;
+            /* 设置上下的间距，20px 可根据需要调整 */
+            font-size: 36px;
+            /* 可选，调整标题的字体大小 */
+            font-weight: bold;
+            /* 可选，确保标题加粗 */
+        }
+
+        .description {
+            font-size: 22px;
+            /* 字体大小为20px */
+            margin: 5px 220px;
+            /* 上下边距20px，左右边距300px */
+            text-indent: 2em;
+            /* 首行缩进两个字符 */
+            line-height: 1.8;
+            /* 行高设置为1.6，便于阅读 */
+            text-align: justify;
+            /* 文本两端对齐 */
+            color: #333;
+            /* 可选，设置文本颜色 */
         }
     </style>
 </head>
@@ -144,40 +183,36 @@
                 <li class="top"><a href="fengcai.html">团队风采</a></li>
             </ul>
 
-            <!-- Spacer -->
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <h1>三刀流科研团队</h1>
+            <div class="spacer"></div>
             <div class="spacer"></div>
 
-            <!-- 内容区域 -->
-            <h2 style="font-size: 28px; color: #6e0001; margin-left: 100px;">PI</h2>
 
-            <div class="content">
-                <!-- 第一位 -->
-                <div class="card">
-                    <img src="liu.jpg" alt="老师">
-
-                    <div class="card-content">
-                        <div class="spacer"></div>
-                        <div class="spacer"></div>
-                        <div class="spacer"></div>
-                        <span>刘伟国&nbsp;&nbsp;&nbsp;&nbsp;博士 | 副研究员 | 博士生导师</span>
-                        <div class="spacer"></div>
-                        <div class="spacer"></div>
-                        <p><strong>Email:</strong> liuweiguo110@nwafu.edu.cn</p>
-                        <div class="spacer"></div>
-                        <p><strong>研究方向:</strong>
-                            研究兴趣集中于能源林碳动态分析与模拟和能源植物优化利用分析；全球变化背景下生物质能源碳排放估算模型的构建；干旱半干旱地区灌木林综合利用对生态系统服务的影响。 </p>
-                        <div class="spacer"></div>
-                        <p><strong>个人主页:</strong>
-                            https://cf.nwafu.edu.cn/szdw/zjrc2/382901.htm</p>
-                        <div class="spacer"></div>
-
-                    </div>
-                </div>
-
-
-
+            <div class="carousel">
+                <img src="2222.jpg" alt="Top Image" class="carousel-image">
             </div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <p class="description">
+                本团队主隶属于西北农林科技大学林学院生态预测与全球变化研究中心，现有博士研究生2人，硕士研究生14人。
+
+            </p>
+            <p class="description">
+                <strong>主要研究方向</strong>包括：生态系统碳动态分析、监测与模拟；全球变化背景下生物质能源优化利用及碳排放估算模型的构建；农村地区资源综合利用及生态与经济的可持续发展；土地利用变化的气候变化效应和驱动力分析。<strong>近五年在Resources,
+                    Conservation and Recycling，Global Ecology and
+                    Conservation等期刊发表文章10余篇，包括SCI文章9篇，中文核心2篇；获批专利18项。</strong>
+            </p>
+
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+
         </div>
+    </div>
+    </div>
+    </div>
+
 </body>
 
 </html>
