@@ -6,52 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PI</title>
     <style>
-        .top-image {
-            width: 100%;
-            max-width: 100%;
-            height: auto;
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lato', sans-serif;
+            width: 1800px;
+            /* 固定页面宽度 */
+            margin: 0 auto;
+            /* 页面居中 */
+            background-color: #f5f5f5;
+            /* 可选的背景颜色 */
         }
 
+        /* 顶部导航栏 */
         .top_bar {
-            width: 100%;
+            width: 1800px;
+            /* 固定宽度 */
             background-color: #FFFFFF;
-            display: flex
-            flex-direction: column
         }
 
+        /* LOGO 区域 */
         .logo {
             width: 100%;
-            max-width: 100%;
+            /* LOGO宽度占据顶部栏的宽度 */
         }
 
-        ul {
+        .top-image {
+            display: block;
+            /* 避免图片默认的 inline 行为 */
+            width: 1800px;
+            /* 固定图片宽度 */
+            height: auto;
+            /* 保持图片比例 */
+            margin: 0 auto;
+            /* 居中显示 */
+        }
+
+        /* 顶部导航菜单 */
+        ul.top {
             list-style-type: none;
             margin: 0;
             padding: 0;
             overflow: hidden;
             width: 100%;
-            display: flex;
-            justify-content: space-between;
         }
 
-        li {
+        li.top {
             float: left;
             width: 16.66%;
-            
-        }
-
-        ul.pi {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
-        }
-
-        li.pi {
-            width: 45%;
+            /* 固定每个导航项宽度 */
         }
 
         a:link,
@@ -64,7 +67,7 @@
             padding: 15px;
             text-decoration: none;
             text-transform: uppercase;
-            width: 100%;
+            font-size: 20px;
         }
 
         a:hover,
@@ -78,7 +81,50 @@
             background-color: #FFFFFF;
         }
 
-        
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            /* 自动换行 */
+            justify-content: space-space;
+            /* 子元素之间等距分布 */
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .card {
+            width: 70%;
+            /* 两列布局，每列占宽度的 48% */
+            margin-bottom: 20px;
+            margin-left: 100px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+
+        .card img {
+            width: 400px;
+            height: 320px;
+            border-radius: 5px;
+            margin-right: 50px;
+            /* 图片与文字的间距 */
+        }
+
+        .card-content {
+            flex: 2;
+        }
+
+        .card-content span {
+            font-size: 22px;
+            font-weight: bold;
+            color: #0070c0;
+        }
+
+        .card-content p {
+            margin: 5px 0;
+            font-size: 18px;
+            line-height: 1.5;
+            color: #333333;
+        }
     </style>
 </head>
 
@@ -89,191 +135,49 @@
                 <img src="top picture.png" alt="Top Image" class="top-image">
             </div>
             <div class="spacer"></div>
-            <ul>
-                <li><a href="jianjie.html">简介</a></li>
-                <li><a href="PI.html">PI成员</a></li>
-                <li><a href="zaidu.html">在读研究生</a></li>
-                <li><a href="biye.html">已毕业研究生</a></li>
-                <li><a href="chengguo.html">学术成果</a></li>
-                <li><a href="fengcai.html">团队风采</a></li>
+            <ul class="top">
+                <li class="top"><a href="jianjie.html">简介</a></li>
+                <li class="top"><a href="PI.html">PI成员</a></li>
+                <li class="top"><a href="zaidu.html">在读研究生</a></li>
+                <li class="top"><a href="biye.html">已毕业研究生</a></li>
+                <li class="top"><a href="chengguo.html">学术成果</a></li>
+                <li class="top"><a href="fengcai.html">团队风采</a></li>
             </ul>
-            <div class="wp_single wp_column_article" id="wp_column_article">
-                <div class="wp_entry">
-                    <div class="wp_articlecontent">
-                        <div id="wp_content_w5_0" class="paging_content" style="display:">
-                            <div class="content">
-                                <p>
-                                    <span
-                                        style="background-color:#ffffff;color:#6e0001;font-family:lato, sans-serif;font-size:28px"><strong>&nbsp;
-                                            &nbsp; &nbsp; &nbsp;PI</strong></span>
-                                </p>
 
-                                <ul class="pi">
-                                    <li class="pi">
-                                        <p>
-                                            <img data-layer="photo" src="liu.jpg"
-                                                style="float:left;width: 380px;px;height:320px;padding-right:10px;"
-                                                sudyfile-attr="{'title':'老师 拷贝.png'}" height="400" border="0" hspace="0"
-                                                vspace="0">
-                                            <span
-                                                style="color:#0064a0;font-family:lato, sans-serif;font-weight:700;text-align:center;font-size:18px;line-height:1.5em;">
-                                                &nbsp; &nbsp; &nbsp;
-                                                <span
-                                                    style="font-family:lato, sans-serif;font-weight:700;text-align:center;line-height:1.5em;font-size:20px;color:#0070c0;">刘伟国
-                                                </span>
-                                            </span>
-                                            <span
-                                                style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">
-                                                <span
-                                                    style="font-family:lato, sans-serif;font-size:17px;line-height:1.5em;color:#0070c0;">&nbsp;</span>
-                                                &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                            </span>
-                                        </p>
-                                        <p><span
-                                                style="color:#333333;font-family:lato, sans-serif;font-weight:700;text-align:center;line-height:1.5em;font-size:18px;">&nbsp;
-                                                &nbsp; &nbsp; 博士 | 副研究员 | 博士生导师</span>
-                                            
-                                        </p>
-                                        <p style="line-height:1.5em;margin-bottom:10px;">
-                                            <span
-                                                style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                                &nbsp; &nbsp;</span>
-                                            <span
-                                                style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">Email:&nbsp;</span>
-                                            <strong>
-                                                <span
-                                                    style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">liuweiguo110@nwafu.edu.cn</span>
-                                            </strong>
-                                            <span
-                                                style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                                &nbsp;</span>
-                                        </p>
-                                        
-                                        <p style="line-height:1.5em;margin-bottom:5px;">
-                                            <span
-                                                style="font-family:lato, sans-serif;background:white;line-height:1.5em;line-height:1.5em;color:#383838;">
-                                                <span style="font-size:17px;line-height:1.5em;">&nbsp; &nbsp; &nbsp;
-                                                </span>
-                                            </span>
-                                            <strong style="font-size:20px;color:#428bca;font-family:lato, sans-serif;">
-                                                <span
-                                                    style="font-size:18px;text-decoration:none;color:#0070c0;">研究方向</span></strong>
-                                        </p>
-                                        <p style="text-align:left;margin:5px 0cm;line-height:1.5em;">
-                                            <strong>
-                                                <span
-                                                    style="font-size:17px;font-family:lato, sans-serif;color:#383838;background:white;line-height:1.5em;">&nbsp;
-                                                    &nbsp; &nbsp; &nbsp;研究兴趣集中于能源林碳动态分析与模拟和能源植物&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;优化利用分析；全球变化背景下生物质能源碳排放估&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;算模型的构建；干旱半干旱地区灌木林综合利用对生&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;态系统服务的影响。&nbsp;&nbsp;</span>
-                                            </strong>
-                                           
-                                        </p>
+            <!-- Spacer -->
+            <div class="spacer"></div>
 
-                                        <p style="line-height:1.5em;margin-bottom:5px;">
-                                            <span
-                                                style="font-family:lato, sans-serif;background:white;line-height:1.5em;line-height:1.5em;color:#383838;">
-                                                <span style="font-size:17px;line-height:1.5em;">&nbsp; &nbsp; &nbsp;
-                                                </span>
-                                            </span>
-                                            <strong style="font-size:20px;color:#428bca;font-family:lato, sans-serif;">
-                                                <span
-                                                    style="font-size:18px;text-decoration:none;color:#0070c0;">个人主页</span></strong>
-                                        </p>
-                                        <p style="text-align:left;margin:5px 0cm;line-height:1.5em;">
-                                            <strong>
-                                                <span style="font-size:17px;font-family:lato, sans-serif;color:#383838;background:white;line-height:1.5em;"> 
-                                                    &nbsp; &nbsp; &nbsp;&nbsp;https://cf.nwafu.edu.cn/szdw/zjrc2/382901.htm  
-                                                </span>
-                                                
-                                                    
-                                            </strong>
-                                           
-                                        </p>
-                                        
-                                      
-                                    <li class="pi">
-                                        <p>
-                                            <img data-layer="photo" src="bai.jpg"
-                                                style="float:left;width:380px;height:320px;padding-right:10px;"
-                                                sudyfile-attr="{'title':'老师 拷贝.png'}" height="400" border="0" hspace="0"
-                                                vspace="0">
-                                            <span
-                                                style="color:#0064a0;font-family:lato, sans-serif;font-weight:700;text-align:center;font-size:18px;line-height:1.5em;">
-                                                &nbsp; &nbsp; &nbsp;
-                                                <span
-                                                    style="font-family:lato, sans-serif;font-weight:700;text-align:center;line-height:1.5em;font-size:20px;color:#0070c0;">
-                                                </span>
-                                            </span>
-                                            <span
-                                                style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">
-                                                <span
-                                                    style="font-family:lato, sans-serif;font-size:17px;line-height:1.5em;color:#0070c0;">&nbsp;</span>
-                                                &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                            </span>
-                                        </p>
-                                        <p><span
-                                                style="color:#333333;font-family:lato, sans-serif;font-weight:700;text-align:center;line-height:1.5em;font-size:18px;">&nbsp;
-                                                &nbsp; &nbsp; </span>
-                                            <span
-                                                style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                                &nbsp;
-                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                                &nbsp;</span>
-                                        </p>
-                                        <p style="line-height:1.5em;margin-bottom:10px;">
-                                            <span
-                                                style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                                &nbsp; &nbsp;</span>
-                                            <span
-                                                style="color:#333333;font-weight:700;text-align:center;font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;">&nbsp;</span>
-                                            <strong>
-                                                <span
-                                                    style="font-family:微软雅黑, &quot;microsoft yahei&quot;;font-size:18px;line-height:1.5em;"></span>
-                                            </strong>
-                                            <span
-                                                style="color:#383838;font-family:lato, sans-serif;font-size:17px;line-height:1.5em;">&nbsp;
-                                                &nbsp;</span>
-                                        </p>
-                                        <p style="line-height:1.5em;margin-bottom:5px;">
-                                            <span
-                                                style="font-family:lato, sans-serif;background:white;line-height:1.5em;line-height:1.5em;color:#383838;">
-                                                <span style="font-size:17px;line-height:1.5em;">&nbsp; &nbsp; &nbsp;
-                                                </span>
-                                            </span>
-                                            <strong style="font-size:20px;color:#428bca;font-family:lato, sans-serif;">
-                                                <span
-                                                style="font-size:18px;text-decoration:none;color:#0070c0;"></span></strong>
-                                    </p>
-                                    <p style="text-align:left;margin:5px 0cm;line-height:1.5em;">
-                                        <strong>
-                                            <span
-                                                style="font-size:17px;font-family:lato, sans-serif;color:#383838;background:white;line-height:1.5em;">&nbsp;
-                                                &nbsp; &nbsp; &nbsp;
-                                                <br>
-                                                &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;</span>
-                                        </strong>
-                                       
-                                    </p>
+            <!-- 内容区域 -->
+            <h2 style="font-size: 28px; color: #6e0001; margin-left: 100px;">PI</h2>
 
-                                    <p style="line-height:1.5em;margin-bottom:5px;">
-                                        <span
-                                            style="font-family:lato, sans-serif;background:white;line-height:1.5em;line-height:1.5em;color:#383838;">
-                                            <span style="font-size:17px;line-height:1.5em;">&nbsp; &nbsp; &nbsp;
-                                            </span>
-                                        </span>
-                                        <strong style="font-size:20px;color:#428bca;font-family:lato, sans-serif;">
-                                            <span
-                                                style="font-size:18px;text-decoration:none;color:#0070c0;"></span></strong>
-                                    </p>
-                                    <p style="text-align:left;margin:5px 0cm;line-height:1.5em;">
-                                        <strong>
-                                            <span style="font-size:17px;font-family:lato, sans-serif;color:#383838;background:white;line-height:1.5em;"> 
-                                                &nbsp; &nbsp; &nbsp;&nbsp;
-                                            </span>
-                                            
-                                                
-                                        </strong>
-                                                
-                                          
-                                        </p>
-                            </div>
+            <div class="content">
+                <!-- 第一位 -->
+                <div class="card">
+                    <img src="liu.jpg" alt="老师">
+
+                    <div class="card-content">
+                        <div class="spacer"></div>
+                        <div class="spacer"></div>
+                        <div class="spacer"></div>
+                        <span>刘伟国&nbsp;&nbsp;&nbsp;&nbsp;博士 | 副研究员 | 博士生导师</span>
+                        <div class="spacer"></div>
+                        <div class="spacer"></div>
+                        <p><strong>Email:</strong> liuweiguo110@nwafu.edu.cn</p>
+                        <div class="spacer"></div>
+                        <p><strong>研究方向:</strong>
+                            研究兴趣集中于能源林碳动态分析与模拟和能源植物优化利用分析；全球变化背景下生物质能源碳排放估算模型的构建；干旱半干旱地区灌木林综合利用对生态系统服务的影响。 </p>
+                        <div class="spacer"></div>
+                        <p><strong>个人主页:</strong>
+                            https://cf.nwafu.edu.cn/szdw/zjrc2/382901.htm</p>
+                        <div class="spacer"></div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+</body>
+
+</html>
