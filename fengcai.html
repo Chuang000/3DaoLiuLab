@@ -6,23 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>团队风采</title>
     <style>
-        .top-image {
-            width: 100%;
-            height: auto;
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lato', sans-serif;
+            width: 1800px;
+            /* 固定页面宽度 */
+            margin: 0 auto;
+            /* 页面居中 */
+            background-color: #f5f5f5;
+            /* 可选的背景颜色 */
         }
 
+        /* 顶部导航栏 */
         .top_bar {
-            width: 100%;
+            width: 1800px;
+            /* 固定宽度 */
             background-color: #FFFFFF;
-            display: flex
-            flex-direction: column
         }
 
+        /* LOGO 区域 */
         .logo {
             width: 100%;
+            /* LOGO宽度占据顶部栏的宽度 */
         }
 
-        ul {
+        .top-image {
+            display: block;
+            /* 避免图片默认的 inline 行为 */
+            width: 1800px;
+            /* 固定图片宽度 */
+            height: auto;
+            /* 保持图片比例 */
+            margin: 0 auto;
+            /* 居中显示 */
+        }
+
+        /* 顶部导航菜单 */
+        ul.top {
             list-style-type: none;
             margin: 0;
             padding: 0;
@@ -30,9 +51,10 @@
             width: 100%;
         }
 
-        li {
+        li.top {
             float: left;
             width: 16.66%;
+            /* 固定每个导航项宽度 */
         }
 
         a:link,
@@ -45,7 +67,6 @@
             padding: 15px;
             text-decoration: none;
             text-transform: uppercase;
-            width: 100%;
             font-size: 20px;
         }
 
@@ -60,7 +81,12 @@
             background-color: #FFFFFF;
         }
 
-
+        .photo-container {
+            width: 1000px;
+            /* 固定宽度 */
+            margin: 0 auto;
+            /* 居中显示 */
+        }
 
         .photo {
             list-style-type: none;
@@ -68,44 +94,37 @@
             /* 水平居中 */
             padding: 0;
             overflow: hidden;
-            /* 清除浮动 */
             display: flex;
+            /* 使用 Flex 布局 */
             justify-content: space-around;
-            width: 80%;
-            /* 页面宽度的70% */
+            /* 等间距排列 */
             flex-wrap: wrap;
-            /* 允许元素换行 */
+            /* 允许换行 */
         }
 
         li.photo {
-            width: 18%;
+            width: 300px;
+            /* 固定每张图片的宽度 */
             margin-bottom: 20px;
-            /* 添加底部间距 */
             display: flex;
             flex-direction: column;
-            /* 使图片和标题垂直排列 */
             align-items: center;
-            /* 中心对齐子元素 */
         }
 
         .photo img {
-            width: 100%;
-            /* 图片宽度自适应至容器宽度 */
-            height: auto;
-            /* 高度自动调整以保持图片比例 */
+            width: 300px;
+            /* 固定宽度 */
+            height: 200px;
+            /* 固定高度 */
             display: block;
-            /* 避免图片下方出现空隙 */
         }
 
         figcaption {
             text-align: center;
-            /* 标题居中 */
             color: black;
-            /* 标题颜色 */
-            font-size: 20px;
-            /* 字体大小 */
+            font-size: 18px;
+            /* 固定字体大小 */
             margin-top: 10px;
-            /* 图片与标题间距 */
         }
     </style>
 </head>
@@ -113,133 +132,164 @@
 <body>
     <div class="top_bar">
         <div class="logo">
-            <img src="top picture.png" alt="Top Image" class="top-image">
+            <div class="logo_box">
+                <img src="top picture.png" alt="Top Image" class="top-image">
+            </div>
+            <div class="spacer"></div>
+            <ul class="top">
+                <li class="top"><a href="jianjie.html">简介</a></li>
+                <li class="top"><a href="PI.html">PI成员</a></li>
+                <li class="top"><a href="zaidu.html">在读研究生</a></li>
+                <li class="top"><a href="biye.html">已毕业研究生</a></li>
+                <li class="top"><a href="chengguo.html">学术成果</a></li>
+                <li class="top"><a href="fengcai.html">团队风采</a></li>
+            </ul>
+
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <ul class="photo">
+                <li class="photo">
+                    <img src="2022年10月 打篮球活动.jpg" alt="篮球活动">
+                    <figcaption>2022年10月 打篮球活动</figcaption>
+                </li>
+                <li class="photo">
+                    <img src="2023年4月 新疆出外业.jpg" alt="新疆外业">
+                    <figcaption>2023年4月 新疆外业</figcaption>
+                </li>
+                <li class="photo">
+                    <img src="2023年5月 2020级毕业答辩.jpg" alt="2020答辩">
+                    <figcaption>2023年5月 2020级毕业答辩</figcaption>
+                </li>
+                <li class="photo">
+                    <img src="2023年8月 出外业.jpg" alt="定边">
+                    <figcaption>2023年8月 定边外业</figcaption>
+                </li>
+                <li class="photo">
+                    <img src="2023年9月 YKnow小游戏.jpg" alt="定边">
+                    <figcaption>2023年9月 UNO游戏</figcaption>
+                </li>
+
+            </ul>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+
+            <!-- 更多图片列表项可以在这里添加 -->
+
+            <ul class="photo">
+
+                <li class="photo">
+                    <img src="2023年10月 大排球.jpg">
+                    <figcaption>2023年10月 大排球活动</figcaption>
+                </li>
+                <li class="photo">
+                    <img src="2023年12月 欢庆冬至.jpg">
+                    <figcaption>2023年12月 欢庆冬至</figcaption>
+                </li>
+                <li class="photo">
+                    <img src="2024年1月 打乒乓球.jpg">
+                    <figcaption>2024年1月 乒乓球活动</figcaption>
+                </li>
+                <li class="photo">
+                    <img src="2024年3月 剧本杀活动.jpg">
+                    <figcaption>2024年3月 剧本杀</figcaption>
+                </li>
+                <li class="photo">
+                    <img src="2024年3月 害你在心口难开.jpg">
+                    <figcaption>2024年3月 害你在心口难开</figcaption>
+                </li>
+                <!-- 更多图片列表项可以在这里添加 -->
+            </ul>
+
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+
+            <ul class="photo">
+
+                <li class="photo">
+                    <img src="2024年3月 马泽萌生日.jpg">
+                    <figcaption>2024年3月 马泽萌生日</figcaption>
+                </li>
+                <li class="photo">
+                    <img src="2024年4月 与Gadow教授交流1.jpg">
+                    <figcaption>2024年4月 学术交流</figcaption>
+                </li>
+
+                <li class="photo">
+                    <img src="2024年4月 踏春活动.jpg">
+                    <figcaption>2024年4月 踏春活动</figcaption>
+                </li>
+                <li class="photo">
+                    <img src="2024年4月 猫鼠游戏.jpg">
+                    <figcaption>2024年4月 猫鼠游戏</figcaption>
+                </li>
+                <li class="photo">
+                    <img src="2024年4月 马拉松活动.jpg">
+                    <figcaption>2024年4月 杨凌马拉松</figcaption>
+                </li>
+                <!-- 更多图片列表项可以在这里添加 -->
+            </ul>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+
+            <ul class="photo">
+
+                <li class="photo">
+                    <img src="2024年5月 2021级毕业答辩.JPG">
+                    <figcaption>2024年5月 2021级毕业答辩</figcaption>
+                </li>
+                <li class="photo">
+                    <img src="2024年5月 打羽毛球活动.jpg">
+                    <figcaption>2024年5月 羽毛球活动</figcaption>
+                </li>
+
+                <li class="photo">
+                    <img src="2024年5月 踢足球活动.jpg">
+                    <figcaption>2024年5月 足球活动</figcaption>
+                </li>
+                <li class="photo">
+                    <img src="2024年6月 毕业合影.jpg">
+                    <figcaption>2024年6月 毕业合影</figcaption>
+                </li>
+                <li class="photo">
+                    <img src="2024年9月 定边外业.jpg">
+                    <figcaption>2024年9月 定边外业</figcaption>
+                </li>
+                <!-- 更多图片列表项可以在这里添加 -->
+            </ul>
+
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+
+            <ul class="photo">
+
+                <li class="photo">
+                    <img src="2024年9月 教师节合影.jpg">
+                    <figcaption>2024年9月 教师节合影</figcaption>
+                </li>
+                <li class="photo">
+                    <img src="2024年10月 狼人杀.jpg">
+                    <figcaption>2024年10月 狼人杀</figcaption>
+                </li>
+
+                <li class="photo">
+                    <img src="2024年10月 过生日.jpg">
+                    <figcaption>2024年10月 过生日</figcaption>
+                </li>
+                <li class="photo">
+                    <img src="2024年11月 掼蛋游戏.jpg">
+                    <figcaption>2024年11月 掼蛋游戏</figcaption>
+                </li>
+                <li class="photo">
+                    <img src="2024年11月 荧光夜跑.jpg">
+                    <figcaption>2024年11月 荧光夜跑</figcaption>
+                </li>
+                <!-- 更多图片列表项可以在这里添加 -->
+            </ul>
         </div>
-        <div class="spacer"></div>
-        <ul>
-            <li><a href="jianjie.html">简介</a></li>
-            <li><a href="PI.html">PI成员</a></li>
-            <li><a href="zaidu.html">在读研究生</a></li>
-            <li><a href="biye.html">已毕业研究生</a></li>
-            <li><a href="chengguo.html">学术成果</a></li>
-            <li><a href="fengcai.html">团队风采</a></li>
-        </ul>
-        <div class="spacer"></div>
-        <div class="spacer"></div>
-        <div class="spacer"></div>
-        <div class="spacer"></div>
-        <div class="spacer"></div>
-        <div class="spacer"></div>
-        <ul class="photo">
-            <li class="photo">
-                <img src="2022年10月 打篮球活动.jpg" alt="篮球活动">
-                <figcaption>2022年10月 打篮球活动</figcaption>
-            </li>
-            <li class="photo">
-                <img src="2023年4月 新疆出外业.jpg" alt="新疆外业">
-                <figcaption>2023年4月 新疆外业</figcaption>
-            </li>
-            <li class="photo">
-                <img src="2023年5月 2020级毕业答辩.jpg" alt="2020答辩">
-                <figcaption>2023年5月 2020级毕业答辩</figcaption>
-            </li>
-            <li class="photo">
-                <img src="2023年8月 出外业.jpg" alt="定边">
-                <figcaption>2023年8月 定边外业</figcaption>
-            </li>
-            <li class="photo">
-                <img src="2023年9月 YKnow小游戏.jpg" alt="定边">
-                <figcaption>2023年9月 UNO游戏</figcaption>
-            </li>
-
-</ul>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-           
-            <!-- 更多图片列表项可以在这里添加 -->
-        
-        <ul class="photo">
-
-            <li class="photo">
-                <img src="2023年10月 大排球.jpg">
-                <figcaption>2023年10月 大排球活动</figcaption>
-            </li>
-            <li class="photo">
-                <img src="2023年12月 欢庆冬至.jpg">
-                <figcaption>2023年12月 欢庆冬至</figcaption>
-            </li>
-            <li class="photo">
-                <img src="2024年1月 打乒乓球.jpg">
-                <figcaption>2024年1月 乒乓球活动</figcaption>
-            </li>
-            <li class="photo">
-                <img src="2024年3月 剧本杀活动.jpg">
-                <figcaption>2024年3月 剧本杀</figcaption>
-            </li>
-            <li class="photo">
-                <img src="2024年3月 害你在心口难开.jpg">
-                <figcaption>2024年3月 害你在心口难开</figcaption>
-            </li>
-            <!-- 更多图片列表项可以在这里添加 -->
-        </ul>
-
-        <div class="spacer"></div>
-        <div class="spacer"></div>
-        
-        <ul class="photo">
-
-            <li class="photo">
-                <img src="2024年3月 马泽萌生日.jpg">
-                <figcaption>2024年3月 马泽萌生日</figcaption>
-            </li>
-            <li class="photo">
-                <img src="2024年4月 与Gadow教授交流1.jpg">
-                <figcaption>2024年4月 学术交流</figcaption>
-            </li>
-            
-            <li class="photo">
-                <img src="2024年4月 踏春活动.jpg">
-                <figcaption>2024年4月 踏春活动</figcaption>
-            </li>
-            <li class="photo">
-                <img src="2024年4月 猫鼠游戏.jpg">
-                <figcaption>2024年4月 猫鼠游戏</figcaption>
-            </li>
-            <li class="photo">
-                <img src="2024年4月 马拉松活动.jpg">
-                <figcaption>2024年4月 杨凌马拉松</figcaption>
-            </li>
-            <!-- 更多图片列表项可以在这里添加 -->
-        </ul>
-        <div class="spacer"></div>
-        <div class="spacer"></div>
-
-        <ul class="photo">
-
-            <li class="photo">
-                <img src="2024年5月 2021级毕业答辩.JPG">
-                <figcaption>2024年5月 2021级毕业答辩</figcaption>
-            </li>
-            <li class="photo">
-                <img src="2024年5月 打羽毛球活动.jpg">
-                <figcaption>2024年5月 羽毛球活动</figcaption>
-            </li>
-            
-            <li class="photo">
-                <img src="2024年5月 踢足球活动.jpg">
-                <figcaption>2024年5月 足球活动</figcaption>
-            </li>
-            <li class="photo">
-                <img src="bai.jpg">
-                
-            </li>
-            <li class="photo">
-                <img src="bai.jpg">
-               
-            </li>
-            <!-- 更多图片列表项可以在这里添加 -->
-        </ul>
-    </div>
 </body>
 
 </html>
