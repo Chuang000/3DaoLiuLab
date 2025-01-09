@@ -4,27 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>简介</title>
+    <title>PI</title>
     <style>
-        .top-image {
-            width: 100%;
-            max-width: 100%;
-            height: auto;
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lato', sans-serif;
+            width: 1800px;
+            /* 固定页面宽度 */
+            margin: 0 auto;
+            /* 页面居中 */
+            background-color: #f5f5f5;
+            /* 可选的背景颜色 */
         }
 
+        /* 顶部导航栏 */
         .top_bar {
-            width: 100%;
+            width: 1800px;
+            /* 固定宽度 */
             background-color: #FFFFFF;
-            display: flex
-            flex-direction: column
         }
 
+        /* LOGO 区域 */
         .logo {
             width: 100%;
-            max-width: 100%;
+            /* LOGO宽度占据顶部栏的宽度 */
         }
 
-        ul {
+        .top-image {
+            display: block;
+            /* 避免图片默认的 inline 行为 */
+            width: 1800px;
+            /* 固定图片宽度 */
+            height: auto;
+            /* 保持图片比例 */
+            margin: 0 auto;
+            /* 居中显示 */
+        }
+
+        /* 顶部导航菜单 */
+        ul.top {
             list-style-type: none;
             margin: 0;
             padding: 0;
@@ -32,9 +51,10 @@
             width: 100%;
         }
 
-        li {
+        li.top {
             float: left;
             width: 16.66%;
+            /* 固定每个导航项宽度 */
         }
 
         a:link,
@@ -47,7 +67,6 @@
             padding: 15px;
             text-decoration: none;
             text-transform: uppercase;
-            width: 100%;
             font-size: 20px;
         }
 
@@ -62,61 +81,49 @@
             background-color: #FFFFFF;
         }
 
-        h1 {
-            background-color: #FFFFFF;
-            padding: 10px;
-            margin: 0;
-            text-align: center;
-        }
-
-        h2 {
-            background-color: #FFFFFF;
-            padding: 10px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            text-align: justify;
-            font-family: 'Arial', sans-serif;
-            font-size: 24px;
-            text-indent: 2em;
-        }
-
-        ul.no-wrap {
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            /* 自动换行 */
+            justify-content: space-space;
+            /* 子元素之间等距分布 */
             width: 100%;
-            padding: 0;
-            margin: 0;
-            list-style-type: none;
+            margin-top: 20px;
         }
 
-        ul.no-wrap li {
-            display: block;
-            width: 100%;
-            padding: 0;
-            margin-left: 20px;
+        .card {
+            width: 70%;
+            /* 两列布局，每列占宽度的 48% */
+            margin-bottom: 20px;
+            margin-left: 100px;
+            display: flex;
+            align-items: flex-start;
         }
 
-        span.list-content {
+
+        .card img {
+            width: 400px;
+            height: 320px;
+            border-radius: 5px;
+            margin-right: 50px;
+            /* 图片与文字的间距 */
+        }
+
+        .card-content {
+            flex: 2;
+        }
+
+        .card-content span {
             font-size: 22px;
-            font-family: 'Lato', sans-serif;
-            color: black;
-            background: white;
-            line-height: 2em;
+            font-weight: bold;
+            color: #0070c0;
         }
 
-        .carousel {
-            position: relative;
-            width: 60%;
-            margin: 0 auto;
-            overflow: hidden;
-        }
-
-        .carousel-image {
-            width: 100%;
-            height: auto;
-            display: none;
-        }
-
-        .carousel-image.active {
-            display: block;
+        .card-content p {
+            margin: 5px 0;
+            font-size: 18px;
+            line-height: 1.5;
+            color: #333333;
         }
     </style>
 </head>
@@ -128,68 +135,49 @@
                 <img src="top picture.png" alt="Top Image" class="top-image">
             </div>
             <div class="spacer"></div>
-            <ul>
-                <li><a href="jianjie.html">简介</a></li>
-                <li><a href="PI.html">PI成员</a></li>
-                <li><a href="zaidu.html">在读研究生</a></li>
-                <li><a href="biye.html">已毕业研究生</a></li>
-                <li><a href="chengguo.html">学术成果</a></li>
-                <li><a href="fengcai.html">团队风采</a></li>
+            <ul class="top">
+                <li class="top"><a href="jianjie.html">简介</a></li>
+                <li class="top"><a href="PI.html">PI成员</a></li>
+                <li class="top"><a href="zaidu.html">在读研究生</a></li>
+                <li class="top"><a href="biye.html">已毕业研究生</a></li>
+                <li class="top"><a href="chengguo.html">学术成果</a></li>
+                <li class="top"><a href="fengcai.html">团队风采</a></li>
             </ul>
+
+            <!-- Spacer -->
             <div class="spacer"></div>
-            <div class="spacer"></div>
-            <h1>三刀流科研团队简介</h1>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <div class="carousel">
-                <img src="合照1.jpg" alt="Top Image" class="carousel-image">
-                
-                <img src="2222.jpg" alt="Top Image" class="carousel-image">
-                <img src="合照2.jpg" alt="Top Image" class="carousel-image">
+
+            <!-- 内容区域 -->
+            <h2 style="font-size: 28px; color: #6e0001; margin-left: 100px;">PI</h2>
+
+            <div class="content">
+                <!-- 第一位 -->
+                <div class="card">
+                    <img src="liu.jpg" alt="老师">
+
+                    <div class="card-content">
+                        <div class="spacer"></div>
+                        <div class="spacer"></div>
+                        <div class="spacer"></div>
+                        <span>刘伟国&nbsp;&nbsp;&nbsp;&nbsp;博士 | 副研究员 | 博士生导师</span>
+                        <div class="spacer"></div>
+                        <div class="spacer"></div>
+                        <p><strong>Email:</strong> liuweiguo110@nwafu.edu.cn</p>
+                        <div class="spacer"></div>
+                        <p><strong>研究方向:</strong>
+                            研究兴趣集中于能源林碳动态分析与模拟和能源植物优化利用分析；全球变化背景下生物质能源碳排放估算模型的构建；干旱半干旱地区灌木林综合利用对生态系统服务的影响。 </p>
+                        <div class="spacer"></div>
+                        <p><strong>个人主页:</strong>
+                            https://cf.nwafu.edu.cn/szdw/zjrc2/382901.htm</p>
+                        <div class="spacer"></div>
+
+                    </div>
+                </div>
+
+
+
             </div>
-
-            <h2>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;本团队主要研究方向为：</h2>
-            <ul class="no-wrap">
-                <li><span class="list-content">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;1.
-                        生态系统碳动态分析、监测与模拟；</span></li>
-                <li><span class="list-content">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 2.
-                        全球变化背景下生物质能源优化利用及碳排放估算模型的构建；</span></li>
-                <li><span class="list-content">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 3.
-                        农村地区资源综合利用及生态与经济的可持续发展；</span></li>
-                <li><span class="list-content">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;4.
-                        土地利用变化的气候变化效应和驱动力分析。</span></li>
-            </ul>
-
-            <h2>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;本研究团队现有硕士研究生14人，博士研究生1人。</h2>
-            <h2>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;近五年发表文章10余篇，包括SCI文章9篇，中文核心1篇；获批专利17项。</h2>
         </div>
-    </div>
-    <script>
-        const images = document.querySelectorAll('.carousel-image');
-        let currentIndex = 0;
-
-        function showImage(index) {
-            images.forEach((img, i) => {
-                if (i === index) {
-                    img.classList.add('active');
-                } else {
-                    img.classList.remove('active');
-                }
-            });
-        }
-
-        function nextImage() {
-            currentIndex = (currentIndex + 1) % images.length;
-            showImage(currentIndex);
-        }
-
-        // 设置自动轮播，每 3 秒切换一张图片
-        setInterval(nextImage, 3000);
-
-        // 初始显示第一张图片
-        showImage(currentIndex);
-    </script>
 </body>
 
 </html>
