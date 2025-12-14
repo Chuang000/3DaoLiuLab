@@ -10,36 +10,27 @@
             margin: 0;
             padding: 0;
             font-family: 'Lato', sans-serif;
-            width: 1800px;
-            /* 固定页面宽度 */
-            margin: 0 auto;
-            /* 页面居中 */
-            background-color: #f5f5f5;
-            /* 可选的背景颜色 */
+            width: 1800px; /* 固定页面宽度 */
+            margin: 0 auto; /* 页面居中 */
+            background-color: #f5f5f5; /* 可选的背景颜色 */
         }
 
         /* 顶部导航栏 */
         .top_bar {
-            width: 1800px;
-            /* 固定宽度 */
+            width: 1800px; /* 固定宽度 */
             background-color: #FFFFFF;
         }
 
         /* LOGO 区域 */
         .logo {
-            width: 100%;
-            /* LOGO宽度占据顶部栏的宽度 */
+            width: 100%; /* LOGO宽度占据顶部栏的宽度 */
         }
 
         .top-image {
-            display: block;
-            /* 避免图片默认的 inline 行为 */
-            width: 1800px;
-            /* 固定图片宽度 */
-            height: auto;
-            /* 保持图片比例 */
-            margin: 0 auto;
-            /* 居中显示 */
+            display: block; /* 避免图片默认的 inline 行为 */
+            width: 1800px; /* 固定图片宽度 */
+            height: auto; /* 保持图片比例 */
+            margin: 0 auto; /* 居中显示 */
         }
 
         /* 顶部导航菜单 */
@@ -53,8 +44,7 @@
 
         li.top {
             float: left;
-            width: 16.66%;
-            /* 固定每个导航项宽度 */
+            width: 16.66%; /* 固定每个导航项宽度 */
         }
 
         a:link,
@@ -83,17 +73,14 @@
 
         .content {
             display: flex;
-            flex-wrap: wrap;
-            /* 自动换行 */
-            justify-content: space-space;
-            /* 子元素之间等距分布 */
+            flex-wrap: wrap; /* 自动换行 */
+            justify-content: space-space; /* 子元素之间等距分布 */
             width: 100%;
             margin-top: 20px;
         }
 
         .card {
-            width: 45%;
-            /* 两列布局，每列占宽度的 48% */
+            width: 45%; /* 两列布局，每列占宽度的 48% */
             margin-bottom: 20px;
             margin-left: 80px;
             display: flex;
@@ -105,8 +92,7 @@
             width: 225px;
             height: 300px;
             border-radius: 5px;
-            margin-right: 30px;
-            /* 图片与文字的间距 */
+            margin-right: 30px; /* 图片与文字的间距 */
         }
 
         .card-content {
@@ -125,6 +111,8 @@
             line-height: 1.5;
             color: #333333;
         }
+
+        
     </style>
 </head>
 
@@ -143,137 +131,222 @@
                 <li class="top"><a href="chengguo.html">学术成果</a></li>
                 <li class="top"><a href="fengcai.html">团队风采</a></li>
             </ul>
+    
+        <!-- Spacer -->
+        <div class="spacer"></div>
 
-            <!-- Spacer -->
-            <div class="spacer"></div>
+        <!-- 内容区域 -->
+        <h2 style="font-size: 28px; color: #6e0001; margin-left: 80px;">硕士研究生</h2>
+        <div class="spacer"></div>
+        <div class="content">
+            <!-- 第一位学生 -->
+            <div class="card">
+                <img src="2020级田佳静.jpg" alt="田佳静">
 
-            <!-- 内容区域 -->
-            <h2 style="font-size: 28px; color: #6e0001; margin-left: 80px;">硕士研究生</h2>
-            <div class="spacer"></div>
-            <div class="content">
-                <!-- 第一位学生 -->
-                <div class="card">
-                    <img src="2020级田佳静.jpg" alt="田佳静">
-
-                    <div class="card-content">
-                        <span>田佳静&nbsp;&nbsp;2020级硕士</span>
-                        <div class="spacer"></div>
-                        <p><strong>毕业年份:</strong> 2023年</p>
-                        <div class="spacer"></div>
-                        <p><strong>研究方向:</strong> 生物质能源碳排放和气候变化</p>
-                        <div class="spacer"></div>
-                        <p><strong>成果及荣誉:</strong> <br>
-                            在Resources, Conservation and Recycling（IF="13.2，中科院1区）发表论文1篇；获国家励志奖学金，专业奖学金；院级优秀党员</p>
-                        <div class="spacer"></div>
-                        <p><strong>兴趣爱好:</strong> 阅读，跑步</p>
-                    </div>
+                <div class="card-content">
+                    <span>田佳静&nbsp;&nbsp;2020级硕士</span>
+                    <div class="spacer"></div>
+                    <p><strong>毕业年份:</strong> 2023年</p>
+                    <div class="spacer"></div>
+                    <p><strong>研究方向:</strong> 生物质能源碳排放和气候变化</p>
+                    <div class="spacer"></div>
+                    <p><strong>成果及荣誉:</strong> <br>
+                        在Resources, Conservation and Recycling（IF="13.2，中科院1区）发表论文1篇；获国家励志奖学金，专业奖学金；院级优秀党员</p>
+                    <div class="spacer"></div>
+                    <p><strong>兴趣爱好:</strong> 阅读，跑步</p>
                 </div>
-
-                <!-- 第二位学生 -->
-                <div class="card">
-                    <img src="2020级谢缘铭.jpg" alt="谢缘铭">
-                    <div class="card-content">
-                        <span>谢缘铭&nbsp;&nbsp;2020级硕士</span>
-                        <div class="spacer"></div>
-                        <p><strong>毕业年份:</strong> 2023年</p>
-                        <div class="spacer"></div>
-                        <p><strong>研究方向:</strong> 植被净初级生产力格局及驱动力</p>
-                        <div class="spacer"></div>
-                        <p><strong>成果及荣誉:</strong> <br>
-                            在Land期刊发表论文一篇，曾获院优秀研究生等称号</p>
-                        <div class="spacer"></div>
-                        <p><strong>兴趣爱好:</strong> 唱歌，画画，手工</p>
-                    </div>
-                </div>
-
-                <!-- 第三位学生 -->
-                <div class="spacer"></div>
-                <div class="card">
-                    <img src="2020级余飞燕.jpg" alt="余飞燕">
-                    <div class="card-content">
-                        <span>余飞燕&nbsp;&nbsp;2020级硕士</span>
-                        <div class="spacer"></div>
-                        <p><strong>毕业年份:</strong> 2023年</p>
-                        <div class="spacer"></div>
-                        <p><strong>研究方向:</strong> 灌木林高分辨率NPP估算方法及分析</p>
-                        <div class="spacer"></div>
-                        <p><strong>成果及荣誉:</strong> <br>
-                            在International Journal of Remote Sensing期刊上发表论文1篇，获批实用新型专利一项</p>
-                        <div class="spacer"></div>
-                        <p><strong>兴趣爱好:</strong> 旅游，看番，游戏</p>
-                    </div>
-                </div>
-
-                <!-- 第四位学生 -->
-                <div class="spacer"></div>
-                <div class="card">
-                    <img src="2020级钟昊铭.jpg" alt="钟昊铭">
-                    <div class="card-content">
-                        <span>钟昊铭&nbsp;&nbsp;2020级硕士</span>
-                        <div class="spacer"></div>
-                        <p><strong>毕业年份:</strong> 2024年</p>
-                        <div class="spacer"></div>
-                        <p><strong>研究方向:</strong> 中国农田剩余物储量评估和植被碳动态模型</p>
-                        <div class="spacer"></div>
-                        <p><strong>成果及荣誉:</strong></p>
-                        <div class="spacer"></div>
-                        <p><strong>兴趣爱好:</strong> 阅读，爬山，尝试新鲜事物</p>
-                    </div>
-                </div>
-
-                <!-- 第五位学生 -->
-                <div class="card">
-                    <img src="2021级方铭杰.jpg" alt="方铭杰">
-                    <div class="card-content">
-                        <span>方铭杰&nbsp;&nbsp;2021级硕士</span>
-                        <div class="spacer"></div>
-                        <p><strong>毕业年份:</strong> 2024年</p>
-                        <div class="spacer"></div>
-                        <p><strong>研究方向:</strong> 西北地区灌木林的动态监测与功能量化评估</p>
-                        <div class="spacer"></div>
-                        <p><strong>成果及荣誉:</strong><br>
-                            以共同作者身份在Atmosphere, Land, International Journal of Remote Sensing期刊各发表论文1篇；“硕博杯”篮球比赛优秀裁判</p>
-                        <div class="spacer"></div>
-                        <p><strong>兴趣爱好:</strong> 运动，健身，游泳，读书</p>
-                    </div>
-                </div>
-
-                <!-- 第六位学生 -->
-                <div class="card">
-                    <img src="2021级郭冰倩.jpg" alt="郭冰倩">
-                    <div class="card-content">
-                        <span>郭冰倩&nbsp;&nbsp;2021级硕士</span>
-                        <div class="spacer"></div>
-                        <p><strong>毕业年份:</strong> 2024年</p>
-                        <div class="spacer"></div>
-                        <p><strong>研究方向:</strong> 黄土高原退耕土壤固碳收益模拟与评估</p>
-                        <div class="spacer"></div>
-                        <p><strong>成果及荣誉:</strong><br>
-                            在西安理工大学学报以第一作者发表文章1篇，在Atmosphere以第二作者发表文章1篇，获批专利“一种灌木平茬方法”，院级优秀大学生</p>
-                        <div class="spacer"></div>
-                        <p><strong>兴趣爱好:</strong> 观看纪录片和电影、制作手工艺品、羽毛球</p>
-                    </div>
-                </div>
-
-                <!-- 第七位学生 -->
-                <div class="card">
-                    <img src="2021级甘小凡.jpg" alt="甘小凡">
-                    <div class="card-content">
-                        <span>甘小凡&nbsp;&nbsp;2021级硕士</span>
-                        <div class="spacer"></div>
-                        <p><strong>毕业年份:</strong> 2024年</p>
-                        <div class="spacer"></div>
-                        <p><strong>研究方向:</strong> 采伐剩余物能源化利用的温室效应评估</p>
-                        <div class="spacer"></div>
-                        <p><strong>成果及荣誉:</strong><br>
-                            在Atmosphere期刊发表论文1篇，授权软著一项，院级优秀大学生，“三分钟”演讲第一名</p>
-                        <div class="spacer"></div>
-                        <p><strong>兴趣爱好:</strong> 舞蹈</p>
-                    </div>
-                </div>
-
             </div>
+
+            <!-- 第二位学生 -->
+            <div class="card">
+                <img src="2020级谢缘铭.jpg" alt="谢缘铭">
+                <div class="card-content">
+                    <span>谢缘铭&nbsp;&nbsp;2020级硕士</span>
+                    <div class="spacer"></div>
+                    <p><strong>毕业年份:</strong> 2023年</p>
+                    <div class="spacer"></div>
+                    <p><strong>研究方向:</strong> 植被净初级生产力格局及驱动力</p>
+                    <div class="spacer"></div>
+                    <p><strong>成果及荣誉:</strong> <br>
+                        在Land期刊发表论文一篇，曾获院优秀研究生等称号</p>
+                    <div class="spacer"></div>    
+                    <p><strong>兴趣爱好:</strong> 唱歌，画画，手工</p>
+                </div>
+            </div>
+            
+            <!-- 第三位学生 -->
+            <div class="spacer"></div>
+            <div class="card">
+                <img src="2020级余飞燕.jpg" alt="余飞燕">
+                <div class="card-content">
+                    <span>余飞燕&nbsp;&nbsp;2020级硕士</span>
+                    <div class="spacer"></div>
+                    <p><strong>毕业年份:</strong> 2023年</p>
+                    <div class="spacer"></div>
+                    <p><strong>研究方向:</strong> 灌木林高分辨率NPP估算方法及分析</p>
+                    <div class="spacer"></div>
+                    <p><strong>成果及荣誉:</strong> <br>
+                    在International Journal of Remote Sensing期刊上发表论文1篇，获批实用新型专利一项</p>
+                    <div class="spacer"></div>
+                    <p><strong>兴趣爱好:</strong> 旅游，看番，游戏</p>
+                </div>
+            </div>
+
+            <!-- 第四位学生 -->
+            <div class="spacer"></div>
+            <div class="card">
+                <img src="2020级钟昊铭.jpg" alt="钟昊铭">
+                <div class="card-content">
+                    <span>钟昊铭&nbsp;&nbsp;2020级硕士</span>
+                    <div class="spacer"></div>
+                    <p><strong>毕业年份:</strong> 2024年</p>
+                    <div class="spacer"></div>
+                    <p><strong>研究方向:</strong> 中国农田剩余物储量评估和植被碳动态模型</p>
+                    <div class="spacer"></div>
+                    <p><strong>成果及荣誉:</strong></p>
+                    <div class="spacer"></div>
+                    <p><strong>兴趣爱好:</strong> 阅读，爬山，尝试新鲜事物</p>
+                </div>
+            </div>
+
+            <!-- 第五位学生 -->
+            <div class="card">
+                <img src="2021级方铭杰.jpg" alt="方铭杰">
+                <div class="card-content">
+                    <span>方铭杰&nbsp;&nbsp;2021级硕士</span>
+                    <div class="spacer"></div>
+                    <p><strong>毕业年份:</strong> 2024年</p>
+                    <div class="spacer"></div>
+                    <p><strong>研究方向:</strong> 西北地区灌木林的动态监测与功能量化评估</p>
+                    <div class="spacer"></div>
+                    <p><strong>成果及荣誉:</strong><br>
+                        在Biomass and Bioenergy发表论文一篇，以共同作者身份在Atmosphere, Land, International Journal of Remote Sensing期刊各发表论文1篇；“硕博杯”篮球比赛优秀裁判</p>
+                    <div class="spacer"></div>
+                    <p><strong>兴趣爱好:</strong> 运动，健身，游泳，读书</p>
+                </div>
+            </div>
+
+            <!-- 第六位学生 -->
+            <div class="card">
+                <img src="2021级郭冰倩.jpg" alt="郭冰倩">
+                <div class="card-content">
+                    <span>郭冰倩&nbsp;&nbsp;2021级硕士</span>
+                    <div class="spacer"></div>
+                    <p><strong>毕业年份:</strong> 2024年</p>
+                    <div class="spacer"></div>
+                    <p><strong>研究方向:</strong> 黄土高原退耕土壤固碳收益模拟与评估</p>
+                    <div class="spacer"></div>
+                    <p><strong>成果及荣誉:</strong><br>
+                        在西安理工大学学报以第一作者发表文章1篇，在Atmosphere以第二作者发表文章1篇，获批专利“一种灌木平茬方法”，院级优秀大学生</p>
+                    <div class="spacer"></div>
+                    <p><strong>兴趣爱好:</strong> 观看纪录片和电影、制作手工艺品、羽毛球</p>
+                </div>
+            </div>
+
+            <!-- 第七位学生 -->
+            <div class="card">
+                <img src="2021级甘小凡.jpg" alt="甘小凡">
+                <div class="card-content">
+                    <span>甘小凡&nbsp;&nbsp;2021级硕士</span>
+                    <div class="spacer"></div>
+                    <p><strong>毕业年份:</strong> 2024年</p>
+                    <div class="spacer"></div>
+                    <p><strong>研究方向:</strong> 采伐剩余物能源化利用的温室效应评估</p>
+                    <div class="spacer"></div>
+                    <p><strong>成果及荣誉:</strong><br>
+                        在Atmosphere期刊发表论文1篇，授权软著一项，院级优秀大学生，“三分钟”演讲第一名</p>
+                    <div class="spacer"></div>
+                    <p><strong>兴趣爱好:</strong> 舞蹈</p>
+                </div>
+            </div>
+
+            <!-- 第八位学生 -->
+            <div class="card">
+                <img src="2022级付珊伊.jpg" alt="付珊伊">
+                <div class="card-content">
+                    <span>付珊伊&nbsp;&nbsp;2022级硕士</span>
+                    <div class="spacer"></div>
+                    <p><strong>毕业年份:</strong> 2025年</p>
+                    <div class="spacer"></div>
+                    <p><strong>研究方向:</strong> 植物多样性分布格局的形成和维持机制</p>
+                    <div class="spacer"></div>
+                    <p><strong>成果及荣誉:</strong><br>
+                        在《应用生态学报》发表论文1篇，获批发明专利一项</p>
+                    <div class="spacer"></div>
+                    <p><strong>兴趣爱好:</strong> 压马路；学习；美妆穿搭</p>
+                </div>
+            </div>
+
+             <!-- 第九位学生 -->
+            <div class="card">
+                <img src="2022级郭涛.jpg" alt="郭涛">
+                <div class="card-content">
+                    <span>郭涛&nbsp;&nbsp;2022级硕士</span>
+                    <div class="spacer"></div>
+                    <p><strong>毕业年份:</strong> 2025年</p>
+                    <div class="spacer"></div>
+                    <p><strong>研究方向:</strong> 生物质优化利用</p>
+                    <div class="spacer"></div>
+                    <p><strong>成果及荣誉:</strong><br>
+                        在Renewable Energy发表论文一篇，院级优秀大学生，“躬稼杯”三分钟学术演讲优秀奖</p>
+                    <div class="spacer"></div>
+                    <p><strong>兴趣爱好:</strong> 爬山，羽毛球，摄影</p>
+                </div>
+            </div>
+
+             <!-- 第十位学生 -->
+            <div class="card">
+                <img src="2022级郭兆祥1.jpg" alt="郭兆祥">
+                <div class="card-content">
+                    <span>郭兆祥&nbsp;&nbsp;2022级硕士</span>
+                    <div class="spacer"></div>
+                    <p><strong>毕业年份:</strong> 2025年</p>
+                    <div class="spacer"></div>
+                    <p><strong>研究方向:</strong> 基于PLUS模型的土地利用转化，中国农业剩余物研究</p>
+                    <div class="spacer"></div>
+                    <p><strong>成果及荣誉:</strong><br>
+                        获批实用新型专利一项，校级优秀学生干部</p>
+                    <div class="spacer"></div>
+                    <p><strong>兴趣爱好:</strong> 羽毛球</p>
+                </div>
+            </div>
+
+             <!-- 第十一位学生 -->
+            <div class="card">
+                <img src="2022级胡祥云.png" alt="胡祥云">
+                <div class="card-content">
+                    <span>胡祥云&nbsp;&nbsp;2022级硕士</span>
+                    <div class="spacer"></div>
+                    <p><strong>毕业年份:</strong> 2025年</p>
+                    <div class="spacer"></div>
+                    <p><strong>研究方向:</strong> 评估中国林木加工剩余物分布格局及气候影响</p>
+                    <div class="spacer"></div>
+                    <p><strong>成果及荣誉:</strong><br>
+                        SCI论文一篇，校级优秀大学生，校级优秀学生干部</p>
+                    <div class="spacer"></div>
+                    <p><strong>兴趣爱好:</strong> 养生，博客</p>
+                </div>
+            </div>
+
+             <!-- 第十二位学生 -->
+            <div class="card">
+                <img src="2022级李琳琳.jpg" alt="李琳琳">
+                <div class="card-content">
+                    <span>李琳琳&nbsp;&nbsp;2022级硕士</span>
+                    <div class="spacer"></div>
+                    <p><strong>毕业年份:</strong> 2025年</p>
+                    <div class="spacer"></div>
+                    <p><strong>研究方向:</strong> 黄土高原生态系统服务价值驱动机制与未来模拟</p>
+                    <div class="spacer"></div>
+                    <p><strong>成果及荣誉:</strong><br>
+                        在西北林学院学报发表论文一篇</p>
+                    <div class="spacer"></div>
+                    <p><strong>兴趣爱好:</strong> 阅读</p>
+                </div>
+            </div>
+
         </div>
+    </div>
 </body>
 
 </html>
